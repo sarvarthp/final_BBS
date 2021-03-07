@@ -1,0 +1,130 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="homepage.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <style>
+.mySlides {display:none;}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+}
+
+.grid-item {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+    </head>
+<body>
+
+    <div class="navigation-bar">
+
+
+      <div id="navigation-container">
+
+        <img src="logo.png">
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Circulation</a></li>
+          <li id = "help"><a href="contactus.html">Contact Us</a></li>
+
+          <li><a href="userlogin.php">Login</a></li>
+          <li><a href="register.html">Signup</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class= "slideshow">
+  <img class="mySlides" src="image.jpg" style="display:block; margin-left: auto; margin-right: auto; margin-top :50px; margin-bottom: 50px; width:80%; height:80%">
+  <img class="mySlides" src="image2.jpg" style="display:block; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom:50px;width:80%;height:80%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h3 style="color: white; font-size: 50px; text-align: center;">Welcome To MIT WPU Book Bank </h3>
+<br><br>
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="first.jpg">
+    <h4 style="color: white; background-color: #145A32 ; font-size: 20px;">WPC Library: Established in 1983 and <br> with over 80,000 volumes,the WPC <br> Library embodies our Universites <br> spirit of gaining knowledge to attain <br> peace.</h4>
+  </div>
+  <div class="grid-item">
+    <img src="second.jpg">
+    <h4 style="color: white; background-color: #1B4F72;">Engineering Library: With over 300 <br> journal subscriptions and 35,000 <br> titles, our library is continuously <br>updated to reflect the latest <br> innovations in technology.</h4>
+
+
+  </div>
+  <div class="grid-item">
+    <img src="third.jpg">
+    <h4 style="color: white; background-color: #808000;">Management Library: Housing <br> multiple volumes of renowned titles, <br>our library is stocked to provide all our <br> students with books in every vertical <br> of management studies.</h4>
+
+
+  </div>
+  <div class="grid-item">
+    <img src="four.jpg">
+    <h4 style="color: white; background-color: #DE3163;">LASC Library: Over 9,500 titles ranging <br> from Einstein’s Theory of Relativity to <br> Joyce’s Ulysses are housed here to <br> expansively cover Commerce, Arts <br> and Science.</h4>
+  </div>
+  <div class="grid-item">
+    <img src="five.jpg">
+    <h4 style="color: white; background-color: #008080;">The Library at Faculty of Education and <br> Training was established in 2007 and <br> has a collection of more than 6500 books <br> for Educational Philosophy, Sociology,<br> Educational Psychology, Management.</h4>
+  </div>
+
+  <div class="grid-item">
+    <img src="six.jpg">
+    <h4 style="color: white; background-color: #454545;">MIT-WPU School of Government Library <br>is a unique Library at the MIT-WPU Campus, <br>established in the year 2005 to assist <br>users of the MITSOG.</h4>
+  </div>
+
+</div>
+<div class="footer">
+    <div class="navigation-bar">
+      <div id="navigation-container">
+  <ul>
+  <li>
+  <img src="logo.png">
+  </li>
+  <li>&nbsp; &nbsp;
+    Address:
+    MIT WPU,
+    Kothrud,
+    Pune,
+    Maharashtra 411038
+  </li>
+  <li>&nbsp; &nbsp;
+    Contact Us:
+    Email:mitbooks@gmail.com&nbsp; &nbsp;
+    Mobile No: +91987654321
+  </li>
+  </ul>
+    </div>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+  </body>
+
+  </html>
